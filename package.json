@@ -11,7 +11,8 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-hook-form": "7.53.0",
-    "papaparse": "5.4.1"
+    "papaparse": "5.4.1",
+    "lucide-react": "^0.469.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
@@ -23,13 +24,8 @@
     "rollup": "4.52.4",
     "esbuild": "0.25.10"
   },
-  "pnpm": {
-    "overrides": {
-      "esbuild": "0.25.10"
-    }
-  },
-  "overrides": {
-    "@rollup/rollup-linux-x64-gnu": "npm:@rollup/rollup-win32-x64-msvc@4.52.4",
-    "@esbuild/linux-x64": "npm:@esbuild/win32-x64@0.25.10"
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.52.4",
+    "@esbuild/linux-x64": "0.25.10"
   }
 }
