@@ -17,20 +17,19 @@
     "@vitejs/plugin-react": "^4.0.0",
     "vite": "5.4.6",
     "typescript": "5.6.2",
-
     "tailwindcss": "3.4.13",
     "postcss": "8.4.47",
     "autoprefixer": "10.4.20",
-
     "rollup": "4.52.4",
-    "@rollup/rollup-linux-x64-gnu": "4.52.4",
-
-    "esbuild": "0.25.10",
-    "@esbuild/linux-x64": "0.25.10"
+    "esbuild": "0.25.10"
   },
   "pnpm": {
     "overrides": {
       "esbuild": "0.25.10"
     }
+  },
+  "overrides": {
+    "@rollup/rollup-linux-x64-gnu": "npm:@rollup/rollup-win32-x64-msvc@4.52.4",
+    "@esbuild/linux-x64": "npm:@esbuild/win32-x64@0.25.10"
   }
 }
